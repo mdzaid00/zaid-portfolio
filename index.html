@@ -3,343 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b12">
-  <meta name="description" content="Zaid Khan — Graphic Designer, Video Editor and AI Creator. Creative visuals, short-form video editing, thumbnails, presentations and AI-powered content.">
-  <title>Zaid Khan | Graphic Designer & Video Editor</title>
+  <meta name="theme-color" content="#060914">
+  <meta name="description" content="Zaid Khan — Graphic Designer, Video Editor, AI Creator and Biotechnology Student. Explore creative projects, digital experiences and technology experiments.">
+  <title>Zaid Khan | Creative Technologist & AI Creator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background-grid"></div>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
+  <div class="site-noise" aria-hidden="true"></div>
   <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="logo" href="#home" aria-label="Zaid Khan home">
-        <span class="logo-mark">Z<span>.</span></span>
-        <span class="logo-name">ZAID KHAN<small>CREATIVE STUDIO</small></span>
-      </a>
-
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-
-      <div class="nav-links">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#work" class="nav-link">Selected Work</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
-      </div>
+  <header class="header" id="top">
+    <a class="brand" href="#home" aria-label="Zaid Khan home">
+      <span class="brand-mark">Z<span>.</span></span>
+      <span class="brand-name">ZAID KHAN<small>CREATIVE TECHNOLOGIST</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="hero container" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow reveal">
-          <span class="status-dot"></span>
-          GRAPHIC DESIGN · VIDEO EDITING · AI
-        </div>
-
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow reveal"><span class="status-dot"></span> DESIGN × TECHNOLOGY × SCIENCE</div>
         <h1 class="hero-title reveal">
-          Ideas into<br>
-          <span class="gradient-text">visual impact.</span>
+          Hi, I'm <span class="gradient-text">Zaid Khan</span><br>
+          <span class="title-outline">I CREATE</span> WHAT'S NEXT<span class="cyan">.</span>
         </h1>
-
         <p class="hero-description reveal">
-          I create bold graphics, engaging video edits and AI-powered visuals
-          that help creators, students and businesses present their ideas with clarity.
+          Turning ideas into stunning visuals, powerful content and smart solutions.
+          I bring creativity, AI and scientific curiosity together to build digital experiences.
         </p>
-
+        <div class="hero-roles reveal">
+          <span>Graphic Designer</span><i></i><span>Video Editor</span><i></i><span>AI Creator</span>
+        </div>
         <div class="hero-actions reveal">
-          <a href="#work" class="button button-primary">Explore My Work <span>↗</span></a>
-          <a href="#contact" class="button button-secondary">Let's Collaborate</a>
+          <a href="#contact" class="btn btn-primary">Hire Me <span>↗</span></a>
+          <a href="#projects" class="btn btn-secondary">Explore My Work <span>↓</span></a>
         </div>
-
-        <div class="hero-proof reveal">
-          <div class="proof-symbol">✳</div>
-          <p><strong>Creative thinking.</strong><br>Thoughtful design. Purposeful editing.</p>
+        <div class="hero-socials reveal">
+          <a href="https://www.linkedin.com/in/muhammad-zaid-khan-96306633a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/mdzaid00" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌘</a>
+          <a href="https://www.upwork.com/freelancers/~014f3179c566e9684d" target="_blank" rel="noopener noreferrer" aria-label="Upwork">Up</a>
+          <span class="social-caption">CONNECT WITH ME</span>
         </div>
       </div>
 
-      <div class="hero-art reveal" aria-label="Abstract animated creative technology artwork">
-        <div class="art-orbit orbit-one"></div>
-        <div class="art-orbit orbit-two"></div>
-        <div class="art-orbit orbit-three"></div>
-        <div class="art-core">
-          <div class="core-glow"></div>
-          <span class="core-symbol">✳</span>
-          <span class="core-caption">CREATIVITY<br>MEETS TECHNOLOGY</span>
+      <div class="hero-visual reveal" aria-label="Creative technology visual">
+        <div class="visual-orbit orbit-a"></div>
+        <div class="visual-orbit orbit-b"></div>
+        <div class="visual-orbit orbit-c"></div>
+        <div class="profile-frame">
+          <div class="profile-image-wrap">
+            <img src="assets/profile.jpg" alt="Portrait of Zaid Khan" class="profile-image"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="profile-placeholder">ZK<span>+</span></div>
+          </div>
+          <div class="profile-bottom"><span>ZAID KHAN</span><span class="online-indicator">● AVAILABLE FOR PROJECTS</span></div>
         </div>
-
-        <div class="float-card float-card-design">
-          <span class="float-icon">◈</span>
-          <div><strong>Graphic Design</strong><small>Visual storytelling</small></div>
-        </div>
-        <div class="float-card float-card-edit">
-          <span class="float-icon">▶</span>
-          <div><strong>Video Editing</strong><small>Motion & rhythm</small></div>
-        </div>
-        <div class="float-card float-card-ai">
-          <span class="float-icon">✧</span>
-          <div><strong>AI Creation</strong><small>New possibilities</small></div>
-        </div>
-        <div class="art-label label-top">CREATIVE / 001</div>
-        <div class="art-label label-bottom">DESIGN WITH INTENTION</div>
+        <div class="float-card float-ai"><span class="mini-icon">✳</span><span>AI CREATION<small>Ideas → Visuals</small></span></div>
+        <div class="float-card float-dna"><span class="mini-icon">⌘</span><span>BIOTECH<span class="tiny-green"> / SCIENCE</span><small>Curiosity meets research</small></span></div>
+        <div class="float-card float-edit"><span class="mini-icon">▶</span><span>VIDEO EDITING<small>Motion & storytelling</small></span></div>
+        <div class="crosshair crosshair-one">+</div><div class="crosshair crosshair-two">+</div>
+        <div class="visual-label">FIG. 01 — CREATIVE SYSTEM</div>
       </div>
-
-      <a href="#work" class="scroll-cue" aria-label="Scroll to selected work">
-        <span class="scroll-line"></span> SCROLL TO EXPLORE
-      </a>
+      <a href="#about" class="scroll-indicator"><span></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <section class="ticker" aria-label="Creative services">
+    <div class="ticker" aria-label="Areas of interest">
       <div class="ticker-track">
-        <span>GRAPHIC DESIGN <b>✳</b></span><span>VIDEO EDITING <b>✳</b></span>
-        <span>AI VISUALS <b>✳</b></span><span>THUMBNAILS <b>✳</b></span>
-        <span>PRESENTATION DESIGN <b>✳</b></span><span>GRAPHIC DESIGN <b>✳</b></span>
-        <span>VIDEO EDITING <b>✳</b></span><span>AI VISUALS <b>✳</b></span>
-        <span>THUMBNAILS <b>✳</b></span><span>PRESENTATION DESIGN <b>✳</b></span>
+        <span>GRAPHIC DESIGN</span><b>✳</b><span>VIDEO EDITING</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>BIOTECHNOLOGY</span><b>✳</b><span>CREATIVE CODING</span><b>✳</b>
+        <span>GRAPHIC DESIGN</span><b>✳</b><span>VIDEO EDITING</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>BIOTECHNOLOGY</span><b>✳</b><span>CREATIVE CODING</span><b>✳</b>
       </div>
-    </section>
+    </div>
 
-    <section class="section container" id="work">
+    <section class="section about-section" id="about">
       <div class="section-heading reveal">
-        <div>
-          <span class="section-kicker">01 / PORTFOLIO</span>
-          <h2>Selected <span class="gradient-text">work.</span></h2>
-        </div>
-        <p>A selection of creative concepts exploring design, science and AI.</p>
+        <span class="section-index">01 / ABOUT</span>
+        <h2>Curiosity is my <span class="gradient-text">superpower.</span></h2>
       </div>
-
-      <div class="project-grid">
-        <article class="project-card project-large reveal" data-tilt>
-          <div class="project-image">
-            <img src="assets/project3.png" alt="Graphic design concept artwork" loading="lazy">
-            <span class="project-number">PROJECT / 01</span>
-            <span class="image-arrow">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <span class="project-type">GRAPHIC DESIGN · CONCEPT</span>
-              <h3>Visual Identity & Creative Graphics</h3>
-            </div>
-            <button class="case-toggle" aria-expanded="false">View case study <span>+</span></button>
-          </div>
-          <div class="case-study">
-            <p class="case-label">THE CREATIVE APPROACH</p>
-            <p><strong>Objective:</strong> Explore a bold, modern visual direction that catches attention and communicates an idea quickly.</p>
-            <p><strong>Design focus:</strong> Composition, contrast, hierarchy and a consistent visual language.</p>
-            <p><strong>Deliverable concept:</strong> A visual direction suitable for social graphics, promotional artwork or a creator brand.</p>
-            <span class="concept-note">Independent portfolio concept · Not a commissioned client project</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-tilt>
-          <div class="project-image">
-            <img src="assets/project2.png" alt="Artificial intelligence and science visual concept" loading="lazy">
-            <span class="project-number">PROJECT / 02</span>
-            <span class="image-arrow">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <span class="project-type">AI VISUALS · CONCEPT</span>
-              <h3>Future of AI & Science</h3>
-            </div>
-            <button class="case-toggle" aria-expanded="false">Case study <span>+</span></button>
-          </div>
-          <div class="case-study">
-            <p class="case-label">THE CREATIVE APPROACH</p>
-            <p><strong>Objective:</strong> Turn a technology-focused idea into an accessible, visually engaging concept.</p>
-            <p><strong>Design focus:</strong> Futuristic imagery, visual storytelling, atmosphere and clear subject emphasis.</p>
-            <p><strong>Potential use:</strong> Educational content, technology posts, video covers and presentation visuals.</p>
-            <span class="concept-note">Independent portfolio concept · Not a commissioned client project</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-tilt>
-          <div class="project-image">
-            <img src="assets/project1.png" alt="Biotechnology research concept artwork" loading="lazy">
-            <span class="project-number">PROJECT / 03</span>
-            <span class="image-arrow">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <span class="project-type">SCIENCE COMMUNICATION · CONCEPT</span>
-              <h3>Biotechnology Visual Storytelling</h3>
-            </div>
-            <button class="case-toggle" aria-expanded="false">Case study <span>+</span></button>
-          </div>
-          <div class="case-study">
-            <p class="case-label">THE CREATIVE APPROACH</p>
-            <p><strong>Objective:</strong> Explore how complex scientific subjects can be presented through approachable visual content.</p>
-            <p><strong>Design focus:</strong> Scientific themes, clear composition, contrast and a modern research aesthetic.</p>
-            <p><strong>Potential use:</strong> Educational graphics, science explainers and academic presentation concepts.</p>
-            <span class="concept-note">Independent portfolio concept · Not a commissioned client project</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="work-note reveal">
-        <span class="note-icon">ⓘ</span>
-        <p>These are concept pieces created to demonstrate creative direction. More tailored work can be developed around your brief and goals.</p>
-      </div>
-    </section>
-
-    <section class="services-section" id="services">
-      <div class="container section">
-        <div class="section-heading reveal">
-          <div>
-            <span class="section-kicker">02 / WHAT I DO</span>
-            <h2>Creative services,<br><span class="gradient-text">built around you.</span></h2>
-          </div>
-          <p>Practical creative support for content creators, students, educators and growing businesses.</p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card service-featured reveal">
-            <div class="service-top"><span class="service-icon">◈</span><span class="service-index">01</span></div>
-            <span class="service-tag">PRIMARY SERVICE</span>
-            <h3>Graphic Design</h3>
-            <p>Attention-grabbing visuals designed to communicate your message clearly and consistently.</p>
-            <ul>
-              <li>Social media posts & carousels</li>
-              <li>YouTube thumbnails</li>
-              <li>Posters, banners & promotional graphics</li>
-              <li>Creative concepts & visual layouts</li>
-            </ul>
-            <a href="#contact" class="service-link">Discuss a design project <span>↗</span></a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-top"><span class="service-icon">▶</span><span class="service-index">02</span></div>
-            <span class="service-tag">PRIMARY SERVICE</span>
-            <h3>Video Editing</h3>
-            <p>Short-form edits with intentional pacing, clean cuts, captions and visual rhythm.</p>
-            <ul>
-              <li>Reels & YouTube Shorts</li>
-              <li>Music-synced cuts and transitions</li>
-              <li>Captions, titles & basic motion</li>
-              <li>Promotional and tutorial edits</li>
-            </ul>
-            <a href="#contact" class="service-link">Discuss a video project <span>↗</span></a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-top"><span class="service-icon">✧</span><span class="service-index">03</span></div>
-            <span class="service-tag">AI-POWERED</span>
-            <h3>AI Visual Creation</h3>
-            <p>AI-assisted creative exploration for distinctive visuals and content ideas.</p>
-            <ul>
-              <li>AI image concepts</li>
-              <li>AI video concepts</li>
-              <li>Prompt writing and refinement</li>
-              <li>Creative direction and ideation</li>
-            </ul>
-            <a href="#contact" class="service-link">Explore an AI idea <span>↗</span></a>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-top"><span class="service-icon">▤</span><span class="service-index">04</span></div>
-            <span class="service-tag">EDUCATION & BUSINESS</span>
-            <h3>Presentation Design</h3>
-            <p>Organized, visually clear presentations for academic and professional topics.</p>
-            <ul>
-              <li>Academic and educational slides</li>
-              <li>Business presentation layouts</li>
-              <li>Science and biotechnology topics</li>
-              <li>Content structure and visual hierarchy</li>
-            </ul>
-            <a href="#contact" class="service-link">Plan a presentation <span>↗</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="process">
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-kicker">03 / HOW I WORK</span>
-          <h2>Simple process.<br><span class="gradient-text">Clear communication.</span></h2>
-        </div>
-        <p>A straightforward workflow to help keep your project organized from brief to delivery.</p>
-      </div>
-
-      <div class="process-grid">
-        <article class="process-item reveal"><span>01</span><h3>Understand</h3><p>Discuss your goal, audience, style references and required format.</p></article>
-        <article class="process-item reveal"><span>02</span><h3>Create</h3><p>Develop the design or edit around the agreed project brief.</p></article>
-        <article class="process-item reveal"><span>03</span><h3>Refine</h3><p>Review feedback and make agreed revisions.</p></article>
-        <article class="process-item reveal"><span>04</span><h3>Deliver</h3><p>Provide the agreed final files and formats.</p></article>
-      </div>
-    </section>
-
-    <section class="about-section" id="about">
-      <div class="container about-layout">
-        <div class="about-visual reveal">
-          <div class="profile-frame">
-            <img src="assets/profile.jpg" alt="Zaid Khan" loading="lazy">
-            <div class="profile-overlay"></div>
-            <span class="profile-stamp">CREATIVE<br>MINDSHIFT ✳</span>
-          </div>
-          <div class="about-decoration">DESIGN<br>×<br>TECHNOLOGY</div>
-        </div>
-
+      <div class="about-grid">
         <div class="about-copy reveal">
-          <span class="section-kicker">04 / A LITTLE ABOUT ME</span>
-          <h2>Curious mind.<br><span class="gradient-text">Creative approach.</span></h2>
-          <p class="about-lead">I'm Zaid Khan, a Biotechnology student exploring the intersection of design, editing and artificial intelligence.</p>
-          <p>I enjoy turning ideas into clear, engaging visual content. My approach combines creative experimentation with an interest in science and technology, whether I'm working on a graphic, a short-form video, or an educational presentation.</p>
-          <p>I'm building my portfolio through independent concepts and personal projects, and I'm open to suitable freelance collaborations.</p>
-
-          <div class="skill-list">
-            <span>Graphic Design</span><span>Video Editing</span><span>Canva</span>
-            <span>CapCut</span><span>AI Tools</span><span>Prompt Engineering</span>
-            <span>Presentation Design</span>
+          <p class="large-copy">I'm a creative mind with a scientific mindset — exploring the intersection of <span class="text-highlight">design, AI, code and biotechnology.</span></p>
+          <p>I'm currently pursuing my first semester of BSc Biotechnology. Alongside my studies, I explore visual storytelling, AI-powered creative workflows, web development and research-oriented projects.</p>
+          <p>My approach is simple: stay curious, experiment thoughtfully and turn ideas into useful digital experiences. I'm learning, building and improving with every project.</p>
+          <a href="#contact" class="text-link">Have an idea? Let's discuss it <span>↗</span></a>
+        </div>
+        <div class="about-panel reveal">
+          <div class="panel-top"><span class="panel-dot"></span> PERSONAL PROFILE <span class="panel-code">ZK_001</span></div>
+          <div class="profile-data">
+            <div><span>01</span><p>EDUCATION<small>BSc Biotechnology · Semester 1</small></p></div>
+            <div><span>02</span><p>CREATIVE FOCUS<small>Design · Video · AI Visuals</small></p></div>
+            <div><span>03</span><p>TECH INTERESTS<small>Python · Web · AI Workflows</small></p></div>
+            <div><span>04</span><p>WORK STYLE<small>Curious · Detail-oriented · Learning</small></p></div>
           </div>
-
-          <a href="assets/profile.jpg" class="text-link" target="_blank" rel="noopener">View profile image <span>↗</span></a>
+          <div class="panel-footer"><span class="pulse-dot"></span> CURRENTLY BUILDING NEW IDEAS</div>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="contact">
-      <div class="contact-panel reveal">
-        <div class="contact-orb"></div>
-        <div class="contact-content">
-          <span class="section-kicker">05 / HAVE A PROJECT?</span>
-          <h2>Let's make something<br><span class="gradient-text">worth looking at.</span></h2>
-          <p>Have a design brief, video to edit, or creative idea to explore? Send me a message with your requirements and timeline.</p>
-          <a class="button button-primary email-button" href="mailto:MUHAMMADZAIDK589@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Zaid%2C%0A%0AI%20am%20interested%20in%20working%20with%20you.%0A%0AProject%20type%3A%0AProject%20details%3A%0ATimeline%3A%0A%0AThank%20you.">
-            Email Me About Your Project <span>↗</span>
-          </a>
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-index">02 / CAPABILITIES</span>
+        <h2>Creative tools. <span class="gradient-text">Technical thinking.</span></h2>
+        <p class="section-intro">A growing toolkit for turning concepts into visual stories and digital solutions.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-number">01</span><div class="skill-icon">✳</div><h3>Graphic Design</h3><p>Visual identities, logos, posters and social media creatives.</p><div class="skill-tags"><span>Branding</span><span>Visuals</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">02</span><div class="skill-icon">▷</div><h3>Video Editing</h3><p>Short-form videos, cinematic cuts, pacing and visual storytelling.</p><div class="skill-tags"><span>Reels</span><span>Motion</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">03</span><div class="skill-icon">✧</div><h3>AI Image & Video</h3><p>AI-assisted visuals, concept art and creative experiments.</p><div class="skill-tags"><span>Generative AI</span><span>Visuals</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">04</span><div class="skill-icon">⌘</div><h3>Prompt Engineering</h3><p>Structured prompts for creative and productivity workflows.</p><div class="skill-tags"><span>Workflows</span><span>Ideation</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">05</span><div class="skill-icon">▤</div><h3>PPT Design</h3><p>Organized, engaging presentations for educational and business topics.</p><div class="skill-tags"><span>Slides</span><span>Storytelling</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">06</span><div class="skill-icon">〈/〉</div><h3>Website Development</h3><p>Responsive websites, portfolio pages and interactive interfaces.</p><div class="skill-tags"><span>HTML/CSS</span><span>JavaScript</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">07</span><div class="skill-icon">π</div><h3>Python Coding</h3><p>Learning and building scripts, small apps and automation experiments.</p><div class="skill-tags"><span>Python</span><span>Automation</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">08</span><div class="skill-icon">⌬</div><h3>Biotechnology</h3><p>Academic learning, scientific curiosity and research project concepts.</p><div class="skill-tags"><span>Life Science</span><span>Research</span></div></article>
+        <article class="skill-card reveal"><span class="skill-number">09</span><div class="skill-icon">◉</div><h3>Content Creation</h3><p>Content ideas, educational explainers and AI-assisted drafting.</p><div class="skill-tags"><span>Ideas</span><span>Writing</span></div></article>
+      </div>
+    </section>
 
-          <div class="contact-details">
-            <div><small>EMAIL</small><a href="mailto:MUHAMMADZAIDK589@gmail.com">MUHAMMADZAIDK589@gmail.com</a></div>
-            <div><small>FREELANCE PROFILES</small>
-              <a href="https://www.upwork.com/freelancers/~014f3179c566e9684d" target="_blank" rel="noopener">Upwork ↗</a>
-              <a href="https://www.linkedin.com/in/muhammad-zaid-khan-96306633a/" target="_blank" rel="noopener">LinkedIn ↗</a>
-              <a href="https://www.fiverr.com/" target="_blank" rel="noopener">Find me on Fiverr ↗</a>
-            </div>
-          </div>
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-index">03 / SELECTED WORK</span>
+        <h2>Ideas in <span class="gradient-text">development.</span></h2>
+        <p class="section-intro">A selection of personal projects, prototypes and creative concepts. Project status is shown transparently.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-bio"><img src="assets/project1.png" alt="Biotechnology research concept artwork" loading="lazy" onerror="this.style.display='none'"><div class="art-overlay"></div><span class="art-label">ACADEMIC TECHNOLOGY / 001</span><span class="art-symbol">⌬</span></div>
+          <div class="project-info"><div class="project-meta"><span>EDTECH · WEB APP CONCEPT</span><span class="project-status">IN DEVELOPMENT</span></div><h3>ZAIDBIOTRACK</h3><p>A proposed academic and laboratory management platform to organize biotechnology subjects, topic progress, lab records and study resources.</p><div class="tag-row"><span>Flask</span><span>Python</span><span>SQLite</span></div><button class="project-link" data-project="biotrack">Explore concept <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-nexus"><span class="art-label">AI RESEARCH / 002</span><div class="nexus-orb"><span>N</span></div><span class="art-symbol">✳</span></div>
+          <div class="project-info"><div class="project-meta"><span>AI · BIOTECH</span><span class="project-status">EXPERIMENTAL</span></div><h3>NEXUS-AI</h3><p>A research copilot concept exploring AI-assisted literature discovery, biotech ideation, data analysis and report creation.</p><div class="tag-row"><span>Python</span><span>AI APIs</span><span>Research</span></div><button class="project-link" data-project="nexus">Explore concept <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-automation"><span class="art-label">CREATOR WORKFLOW / 003</span><div class="workflow-nodes"><span>IDEA</span><i>→</i><span>AI</span><i>→</i><span>VIDEO</span></div><span class="art-symbol">↗</span></div>
+          <div class="project-info"><div class="project-meta"><span>CONTENT · AUTOMATION</span><span class="project-status">PROTOTYPE</span></div><h3>AI YOUTUBE AUTOMATION</h3><p>An automation workflow concept for generating topic-based scripts, titles and hashtags with connected tools.</p><div class="tag-row"><span>n8n</span><span>Google Sheets</span><span>AI</span></div><button class="project-link" data-project="youtube">Explore concept <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-portfolio"><img src="assets/project3.png" alt="Graphic design portfolio concept artwork" loading="lazy" onerror="this.style.display='none'"><div class="art-overlay"></div><span class="art-label">DIGITAL EXPERIENCE / 004</span><span class="art-symbol">✧</span></div>
+          <div class="project-info"><div class="project-meta"><span>WEB DESIGN · PERSONAL BRAND</span><span class="project-status">LIVE PROJECT</span></div><h3>PERSONAL PORTFOLIO</h3><p>A personal portfolio experiment combining creative presentation, responsive design, interactive elements and a technology-inspired visual identity.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://mdzaid00.github.io/zaid-portfolio/" target="_blank" rel="noopener noreferrer">View website <span>↗</span></a></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-ebook"><span class="art-label">LEARNING RESOURCE / 005</span><div class="book-visual"><span>PY</span><small>PYTHON<br>FUNDAMENTALS</small></div><span class="art-symbol">▤</span></div>
+          <div class="project-info"><div class="project-meta"><span>EDUCATION · DOCUMENT DESIGN</span><span class="project-status">CONCEPT</span></div><h3>PYTHON E-BOOK</h3><p>A beginner-focused learning resource concept designed to explain Python fundamentals in accessible language for students.</p><div class="tag-row"><span>Python</span><span>Education</span><span>Design</span></div><button class="project-link" data-project="ebook">Explore concept <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="portfolio-note"><span>ⓘ</span> These are personal projects and concepts, not claims of commissioned client work. Availability and completion status may change.</p>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading reveal">
+        <span class="section-index">04 / WHAT I CAN HELP WITH</span>
+        <h2>From first idea to <span class="gradient-text">final output.</span></h2>
+        <p class="section-intro">Creative and digital services for creators, students, educators and small businesses.</p>
+      </div>
+      <div class="services-list">
+        <div class="service-row reveal"><span class="service-index">01</span><div class="service-icon">✳</div><div class="service-copy"><h3>Logo & Graphic Design</h3><p>Brand concepts, logos, posters, thumbnails and social media graphics.</p></div><span class="service-arrow">↗</span></div>
+        <div class="service-row reveal"><span class="service-index">02</span><div class="service-icon">▷</div><div class="service-copy"><h3>Video Editing & Reels</h3><p>Short-form edits, captions, transitions, pacing and visual polish.</p></div><span class="service-arrow">↗</span></div>
+        <div class="service-row reveal"><span class="service-index">03</span><div class="service-icon">✧</div><div class="service-copy"><h3>AI Visual Creation</h3><p>AI-assisted image concepts, visual assets and creative prompt workflows.</p></div><span class="service-arrow">↗</span></div>
+        <div class="service-row reveal"><span class="service-index">04</span><div class="service-icon">▤</div><div class="service-copy"><h3>Presentations & E-Books</h3><p>Structured slides, educational visuals and readable digital documents.</p></div><span class="service-arrow">↗</span></div>
+        <div class="service-row reveal"><span class="service-index">05</span><div class="service-icon">〈/〉</div><div class="service-copy"><h3>Websites & AI-Assisted Content</h3><p>Portfolio websites, simple web experiences, content drafts and workflow concepts.</p></div><span class="service-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="section-heading reveal">
+        <span class="section-index">05 / CONTACT</span>
+        <h2>Let's build something <span class="gradient-text">amazing.</span></h2>
+        <p class="section-intro">Have a project, creative idea or collaboration in mind? Tell me what you're working on.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <span class="contact-kicker"><span class="status-dot"></span> OPEN TO DISCUSSING PROJECTS</span>
+          <h3>Good ideas deserve<br>great execution.</h3>
+          <p>Share your idea, goals and timeline. I'll review your message and get back to you when available.</p>
+          <a href="mailto:MUHAMMADZAIDK589@gmail.com" class="email-card"><span class="email-icon">✉</span><span>EMAIL ME<small>MUHAMMADZAIDK589@gmail.com</small></span><span class="email-arrow">↗</span></a>
+          <div class="contact-socials"><a href="https://www.linkedin.com/in/muhammad-zaid-khan-96306633a/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/mdzaid00" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.upwork.com/freelancers/~014f3179c566e9684d" target="_blank" rel="noopener noreferrer">Upwork ↗</a></div>
         </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-heading"><span>PROJECT INQUIRY</span><span class="form-code">FORM_001</span></div>
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="What should I call you?" autocomplete="name" required>
+          <label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required><option value="">Choose a service</option><option>Graphic Design / Logo</option><option>Video Editing / Reels</option><option>AI Visual Creation</option><option>Presentation / E-Book</option><option>Website Development</option><option>Other / Collaboration</option></select>
+          <label for="message">Tell me about your project</label><textarea id="message" name="message" rows="4" placeholder="Your idea, goals and timeline..." required></textarea>
+          <button class="btn btn-primary form-submit" type="submit">Prepare Email <span>↗</span></button>
+          <p class="form-hint">Your email app will open with your message prepared. Nothing is stored on this website.</p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <a class="logo footer-logo" href="#home"><span class="logo-mark">Z<span>.</span></span><span class="logo-name">ZAID KHAN<small>CREATIVE STUDIO</small></span></a>
-      <p>Independent creative portfolio · Built with curiosity.</p>
-      <a href="#home" class="back-top">BACK TO TOP ↑</a>
-      <span class="copyright">© <span id="year"></span> Zaid Khan</span>
-    </div>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">Z<span>.</span></span><span class="brand-name">ZAID KHAN<small>CREATIVE TECHNOLOGIST</small></span></a>
+    <p>Designed with curiosity. Built to keep evolving.</p>
+    <a href="#top" class="back-top">BACK TO TOP ↑</a>
+    <div class="footer-bottom"><span>© <span id="year"></span> Zaid Khan. Personal portfolio.</span><span>DESIGN <i>×</i> SCIENCE <i>×</i> TECHNOLOGY</span></div>
   </footer>
 
+  <dialog id="projectDialog" class="project-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button>
+    <span class="section-index" id="dialogLabel">PROJECT DETAILS</span>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogDescription"></p>
+    <div class="tag-row" id="dialogTags"></div>
+    <p class="dialog-disclaimer">This is a personal project or concept. Details describe its intended purpose and do not imply a finished product or client delivery.</p>
+    <button class="btn btn-secondary" id="dialogDone">Close details</button>
+  </dialog>
+
   <script src="script.js"></script>
+  <script src="fx.js"></script>
+  <script src="project-gallery.js"></script>
 </body>
 </html>
